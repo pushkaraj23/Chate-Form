@@ -159,6 +159,7 @@ function App() {
                   value={formData.firstName}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
+                  required
                 />
               </div>
 
@@ -177,6 +178,7 @@ function App() {
                   value={formData.lastName}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
+                  required
                 />
               </div>
             </div>
@@ -197,6 +199,7 @@ function App() {
                     value={formData.grade}
                     onChange={handleChange}
                     className="w-full p-3 bg-red-50 rounded-2xl appearance-none pr-10"
+                    required
                   >
                     <option value="" disabled>
                       Grade
@@ -245,6 +248,7 @@ function App() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
+                  required
                 />
               </div>
             </div>
@@ -265,6 +269,7 @@ function App() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
+                  required
                 />
               </div>
 
@@ -283,7 +288,7 @@ function App() {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
-                  placeholder=""
+                  required
                 />
               </div>
             </div>
