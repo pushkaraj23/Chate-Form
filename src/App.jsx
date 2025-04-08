@@ -199,7 +199,6 @@ function App() {
                     value={formData.grade}
                     onChange={handleChange}
                     className="w-full p-3 bg-red-50 rounded-2xl appearance-none pr-10"
-                    required
                   >
                     <option value="" disabled>
                       Grade
@@ -253,7 +252,7 @@ function App() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               {/* Email */}
               <div>
                 <label
@@ -267,25 +266,6 @@ function App() {
                   id="email"
                   name="email"
                   value={formData.email}
-                  onChange={handleChange}
-                  className="w-full p-3 bg-red-50 rounded-2xl"
-                  required
-                />
-              </div>
-
-              {/* Preferred Mode of Contact */}
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1 ml-1"
-                >
-                  Preferred Mode of Contact
-                </label>
-                <input
-                  type="text"
-                  id="message"
-                  name="message"
-                  value={formData.message}
                   onChange={handleChange}
                   className="w-full p-3 bg-red-50 rounded-2xl"
                   required
